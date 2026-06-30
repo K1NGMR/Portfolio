@@ -1,0 +1,16 @@
+name: Equinox
+version: 1.0-SNAPSHOT
+main: com.equinox.Equinox
+depend: [ProtocolLib]
+api-version: 1.20
+description: Premium security, anti-exploit, and administration suite.
+authors: [ K1NGMR ]
+commands:
+  equinox:
+    description: Core command for the Equinox administration and security system.
+    usage: /equinox [subcommand]
+    permission: equinox.admin
+permissions:
+  equinox.admin:
+    description: Allows full access to all Equinox administrator commands and settings.
+    default: op

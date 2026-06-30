@@ -1,0 +1,13 @@
+name: RegionSentry
+version: 1.0
+main: com.regionsentry.pro.RegionSentryPro
+api-version: 1.20
+folia-supported: true
+commands:
+  regionsentry:
+    description: Open the RegionSentry regional performance grid gui map or view history.
+    permission: regionsentry.admin
+    usage: /regionsentry [history]
+  lagmachine:
+    description: Spawns lag entities and starts load loops to test the region thread.
+    permission: regionsentry.admin

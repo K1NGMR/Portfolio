@@ -1,0 +1,59 @@
+# ==========================================
+#              EQUINOX CONFIGURATION
+# ==========================================
+# Equinox is a premium-grade security, anti-exploit, and administration suite.
+# Specializing in high-performance, packet-level Anti-Xray and Anti-Freecam security.
+
+# ------------------------------------------
+# Module 5: Core Packet Obfuscation (Anti-Xray & Anti-ESP)
+# Obfuscates high-value ores from clients unless they are exposed to air.
+# ------------------------------------------
+core-packet-obfuscation:
+  enabled: true
+  # Obfuscation Level:
+  # 1 = Replace hidden ores with stone/deepslate/netherrack (performance efficient)
+  # 2 = Replace hidden ores with fake ores (coal, iron, etc.) to mislead clients
+  engine-mode: 2
+  # List of high-value blocks to protect/obfuscate
+  protected-ores:
+    - DIAMOND_ORE
+    - DEEPSLATE_DIAMOND_ORE
+    - EMERALD_ORE
+    - DEEPSLATE_EMERALD_ORE
+    - ANCIENT_DEBRIS
+    - NETHERITE_BLOCK
+    - GOLD_ORE
+    - DEEPSLATE_GOLD_ORE
+
+# ------------------------------------------
+# Module 11: Anti-Freecam (Packet Interception)
+# Intercepts chunk packets (MAP_CHUNK) using ProtocolLib. Hides all caves and blocks
+# that do not have a physical path leading to the player's true position.
+# ------------------------------------------
+anti-freecam:
+  enabled: true
+  # Submodule 1: Mask transmission of chunk block data below vertical Y threshold
+  packet-masking: true
+  # Submodule 2: Dynamically unmask only a 3x3 chunk area around player's true physical location
+  progressive-unmask: true
+  # Submodule 3: Hide entity spawn and tracking packets outside line-of-sight
+  entity-hiding: true
+  # Submodule 4: Spoof seed hash in Login and Respawn packets to block seed-cracking mods
+  anti-seedcracker: true
+  # Y-level threshold above which underground caves and ores are concealed.
+  y-threshold: 60
+  # Blocks/containers that are hidden from the player if in a disconnected cave
+  hidden-targets:
+    - CHEST
+    - TRAPPED_CHEST
+    - BARREL
+    - FURNACE
+    - BLAST_FURNACE
+    - SMOKER
+    - SPAWNER
+    - SHULKER_BOX
+    - DISPENSER
+    - DROPPER
+    - HOPPER
+    - BREWING_STAND
+    - TRIAL_SPAWNER

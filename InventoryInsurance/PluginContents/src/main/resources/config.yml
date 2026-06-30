@@ -1,0 +1,112 @@
+# ==============================================================================
+# InventoryInsurance - Configuration File
+# ==============================================================================
+
+# Cooldown (in seconds) that a player must wait between claims.
+# 3600 = 1 hour, 86400 = 24 hours. Set to 0 to disable.
+claim-cooldown: 3600
+
+# Blacklisted materials that will NEVER be covered by insurance.
+# If a player dies with these items, they will always drop on the ground.
+# Use official Bukkit Material names (e.g. NETHERITE_SWORD, DIAMOND_BLOCK).
+blacklisted-items:
+  - "TNT"
+  - "LAVA_BUCKET"
+
+# ==============================================================================
+# Dynamic Insurance Tiers Configuration
+# ==============================================================================
+# You can define as many custom tiers as you like!
+# Internally, the tier ID is the key (e.g. basic, standard, premium).
+# Each tier has customizable display names, pricing, duration, and coverages.
+tiers:
+  basic:
+    display-name: "&b🥉 Basic"
+    price: 1000.0
+    duration-days: 7
+    save-hotbar: true
+    save-inventory: false
+    save-armor: false
+    save-offhand: false
+    save-xp: false
+    xp-restore-percentage: 0
+    permission: "inventoryinsurance.tier.basic" # Optional permission to purchase
+  standard:
+    display-name: "&e🥈 Standard"
+    price: 5000.0
+    duration-days: 7
+    save-hotbar: true
+    save-inventory: true
+    save-armor: false
+    save-offhand: false
+    save-xp: false
+    xp-restore-percentage: 0
+    permission: "inventoryinsurance.tier.standard"
+  premium:
+    display-name: "&a🥇 Premium"
+    price: 10000.0
+    duration-days: 7
+    save-hotbar: true
+    save-inventory: true
+    save-armor: true
+    save-offhand: true
+    save-xp: true
+    xp-restore-percentage: 100
+    permission: "inventoryinsurance.tier.premium"
+
+# ==============================================================================
+# Economy Settings
+# ==============================================================================
+economy:
+  # If false, economy deductions are disabled and all insurance is free.
+  enabled: true
+  
+  # Settings for the built-in fallback economy (only active if no other economy provider is found)
+  initial-balance: 1000.0
+  currency-symbol: "$"
+  currency-name-singular: "Dollar"
+  currency-name-plural: "Dollars"
+
+# ==============================================================================
+# Messages Customization
+# ==============================================================================
+# Supports ChatColor formatting using '&'.
+# Placeholders:
+#   {prefix} - The prefix defined below
+#   {tier} - The display name of the tier
+#   {price} - The formatted cost of the tier
+#   {balance} - The player's formatted balance
+#   {date} - Formatted expiration date
+#   {days} - Remaining duration in days
+#   {time} - Formatted time remaining (e.g. 2h 15m)
+#   {claims} - Pending claims count
+#   {error} - Detailed transaction error
+#   {player} - Player name
+messages:
+  prefix: "&6[&eInventoryInsurance&6] &r"
+  no-permission: "{prefix}&cYou do not have permission to buy insurance."
+  invalid-tier: "{prefix}&cInvalid tier! Available: &e{tiers}"
+  insufficient-funds: "{prefix}&cYou do not have enough money! Costs: &e{price}&c, you have: &a{balance}&c."
+  transaction-failed: "{prefix}&cTransaction failed: &7{error}"
+  purchase-success: "{prefix}&aYou have purchased {tier} &ainsurance for &e{price}&a!"
+  renew-success: "{prefix}&aYou have renewed your {tier} &ainsurance for &e{price}&a!"
+  purchase-success-free: "{prefix}&aYou have purchased {tier} &ainsurance!"
+  renew-success-free: "{prefix}&aYou have renewed your {tier} &ainsurance!"
+  expiry-date: "{prefix}&aIt will expire on: &e{date} &7(in {days} days)"
+  claim-cooldown-error: "{prefix}&cYou must wait &e{time} &cbefore filing another claim."
+  no-claims-error: "{prefix}&cYou do not have any pending claims to retrieve."
+  claim-success: "{prefix}&aYour insured items have been successfully restored!"
+  claim-items-dropped: "{prefix}&6Some items did not fit in your inventory and were dropped at your feet."
+  remove-success: "{prefix}&aYour {tier} &ainsurance has been successfully removed."
+  remove-no-active: "{prefix}&cYou do not have any active insurance to remove."
+  reload-success: "{prefix}&aConfiguration and database reloaded successfully!"
+  status-header: "&6=== Your Insurance Status ==="
+  status-uninsured: "&eStatus: &cUninsured"
+  status-tier: "&eTier: {tier}"
+  status-expires: "&eExpires: &b{date}"
+  status-remaining: "&eTime Remaining: &b{time}"
+  status-balance: "&eYour Balance: &a{balance}"
+  status-pending: "&ePending Claims: &6{claims} death claim(s)"
+  status-cooldown-active: "&eClaim Cooldown: &cActive (expires in {time})"
+  status-cooldown-ready: "&eClaim Cooldown: &aReady"
+  status-footer: "&6============================="

@@ -1,0 +1,167 @@
+# SimplePlots Messages Configuration
+# Color codes (&) are fully supported.
+
+commands:
+  no-permission: "&cYou do not have permission to execute this command."
+  player-only: "&cThis command can only be executed by players."
+  unknown-subcommand: "&cUnknown subcommand. Type /plot help for help."
+  help-header: "&6=== SimplePlots Command Help ==="
+  help-admin-header: "&6=== Admin Options ==="
+  
+  # subcommands help descriptions
+  help-claim: "&e/plot claim &7- Claim the plot you are standing on."
+  help-auto: "&e/plot auto &7- Claim the nearest unclaimed plot."
+  help-info: "&e/plot info &7- Display details of the current plot."
+  help-add: "&e/plot add/trust/deny <player> &7- Manage memberships."
+  help-remove: "&e/plot remove/undeny <player> &7- Remove memberships."
+  help-flag: "&e/plot flag set/remove <flag> [value] &7- Toggle flags."
+  help-biome: "&e/plot biome <biome> &7- Change plot biome."
+  help-merge: "&e/plot merge &7- Merge with adjacent plot."
+  help-unlink: "&e/plot unlink &7- Unmerge plot segments."
+  help-clear: "&e/plot clear &7- Reset plot blocks."
+  help-delete: "&e/plot delete &7- Unclaim and clear plot."
+  help-chat: "&e/plot chat &7- Toggle plot chat."
+  help-sell: "&e/plot sell <price> &7- Put plot up for sale."
+  help-buy: "&e/plot buy &7- Purchase plot."
+  help-backup: "&e/plot backup save/list/load &7- Plot backups."
+  help-download: "&e/plot download &7- Export plot schematic via link."
+  help-setup: "&e/plot setup &7- Run interactive setup to create a plot world."
+  help-condense: "&e/plot condense &7- Re-save world schematic format."
+  help-trim: "&e/plot trim &7- Prune unused chunks."
+  help-database: "&e/plot database import/export &7- Transfer database records."
+  help-transfer: "&e/plot transfer <player> &7- Transfer ownership to another player."
+  help-visit: "&e/plot visit <player> [#] &7- Visit a player's plot."
+  help-home: "&e/plot home [#] &7- Teleport to one of your plots."
+  help-sethome: "&e/plot set home &7- Set a custom teleport point."
+  help-near: "&e/plot near &7- List nearby claimed plots."
+  help-stats: "&e/plot stats &7- View your plot stats."
+  help-rate: "&e/plot rate <1-5> &7- Rate the current plot."
+  help-comments: "&e/plot comments [add|clear|read] &7- Manage plot guestbook."
+  help-copy: "&e/plot copy &7- Copy your plot layout."
+  help-paste: "&e/plot paste &7- Paste copied plot layout."
+  help-middle: "&e/plot middle &7- Teleport to the center of the plot."
+  help-block: "&e/plot block <player> &7- Block a player from entering your plot."
+  help-unblock: "&e/plot unblock <player> &7- Unblock a player."
+  help-joinsupportdc: "&e/plot joinsupportdc &7- Get the link to our Support Discord."
+  help-chest: "&e/plot chest &7- Retrieve items salvaged from merged roads."
+
+  # claim/auto messages
+  not-in-plot-world: "&cYou must be in a plot world to do that!"
+  already-claimed: "&cThis plot is already claimed by {owner}!"
+  plot-claimed: "&aYou have successfully claimed this plot ({id})!"
+  claim-failed: "&cFailed to claim plot."
+  no-plots-available: "&cNo unclaimed plots available."
+  too-many-plots: "&cYou have reached the maximum limit of plots ({limit})!"
+  insufficient-funds: "&cYou do not have enough money! Cost: ${cost}."
+
+  # info messages
+  info-title: "&e=== Plot Info ({id}) ==="
+  info-owner: "&6Owner: &7{owner}"
+  info-trusted: "&6Trusted: &7{players}"
+  info-added: "&6Added: &7{players}"
+  info-denied: "&6Denied: &7{players}"
+  info-flags: "&6Flags: &7{flags}"
+  info-biome: "&6Biome: &7{biome}"
+  info-none: "&7None"
+  not-standing-in-plot: "&cYou are not standing inside a plot."
+
+  # trust/add/remove/deny messages
+  player-not-found: "&cPlayer {name} not found."
+  cannot-target-self: "&cYou cannot perform this action on yourself."
+  not-owner: "&cYou must be the owner of this plot to manage memberships."
+  added-player: "&aAdded {player} to your plot."
+  removed-player: "&aRemoved {player} from your plot."
+  trusted-player: "&aTrusted {player} on your plot."
+  denied-player: "&aDenied {player} from your plot."
+  undenied-player: "&aUndenied {player} from your plot."
+
+  # flag messages
+  flag-set: "&aSuccessfully set flag {flag} to {value}."
+  flag-removed: "&aSuccessfully removed flag {flag}."
+  invalid-flag: "&cInvalid flag name. Allowed flags: {allowed}"
+  invalid-flag-value: "&cInvalid value for flag {flag}."
+
+  # biome messages
+  invalid-biome: "&cInvalid biome. Type /plot biome list to view options."
+  biome-changed: "&aSuccessfully changed plot biome to {biome}."
+
+  # merge/unlink messages
+  cannot-merge-self: "&cYou cannot merge a plot with itself."
+  no-adjacent-plot: "&cNo adjacent plot found in that direction."
+  merge-direction-prompt: "&eLooking at a border. Type &6/plot confirm &eto merge in direction: {direction}."
+  no-pending-merge: "&cYou do not have a pending merge action."
+  merge-success: "&aPlots merged successfully."
+  unlink-success: "&aPlots unlinked successfully."
+
+  # clear/delete messages
+  clear-confirm-prompt: "&eType &6/plot confirm &eto clear this plot. This cannot be undone!"
+  delete-confirm-prompt: "&eType &6/plot confirm &eto delete and unclaim this plot. This cannot be undone!"
+  plot-cleared: "&aPlot cleared successfully."
+  plot-deleted: "&aPlot deleted and unclaimed successfully."
+  inactivity-warning: "&cWarning: You have been inactive for {inactive} days. Your plots will expire in {remaining} days of further inactivity!"
+
+  # chat messages
+  chat-enabled: "&aPlot chat enabled."
+  chat-disabled: "&aPlot chat disabled."
+
+  # sell/buy messages
+  plot-for-sale: "&aYour plot is now for sale for ${price}."
+  plot-not-for-sale: "&cThis plot is not for sale."
+  plot-bought: "&aYou have successfully purchased this plot for ${price}!"
+  plot-sold: "&aYour plot {id} was sold to {player} for ${price}."
+  cannot-sell-unowned: "&cYou do not own this plot."
+  cannot-buy-own: "&cYou cannot buy your own plot."
+
+  # backup messages
+  backup-saved: "&aPlot backup saved successfully as {name}."
+  backup-loaded: "&aPlot backup {name} loaded successfully."
+  backup-list-header: "&e=== Backups for Plot {id} ==="
+  no-backups-found: "&7No backups found for this plot."
+
+  # download messages
+  download-started: "&aGenerating schematic download link..."
+  download-ready: "&aSchematic download is ready: &d{link}"
+
+  # setup messages
+  setup-started: "&aInteractive setup started. Answer questions in chat."
+  setup-complete: "&aPlot world generation configured successfully!"
+
+gui:
+  main-title: "&2Plot Management"
+  flags-title: "&1Configure Plot Flags"
+  biomes-title: "&3Select Plot Biome"
+  close-menu: "&4Close Menu"
+  go-back: "&eGo Back"
+  
+  items:
+    claim-plot:
+      name: "&aClaim Plot"
+      lore:
+        - "&8Plot ID: {id}"
+        - "&eClick to claim this plot for yourself!"
+    no-plot:
+      name: "&cNo Plot Found"
+      lore:
+        - "&7You must be standing inside a plot cell"
+        - "&7to manage it."
+    plot-info:
+      name: "&6Plot Information"
+      lore:
+        - "&ePlot ID: &f{id}"
+        - "&ePlot Name: &f{name}"
+        - "&eOwner: &f{owner}"
+        - "&eTrusted Members: &f{trusted}"
+        - "&eAdded Members: &f{added}"
+        - "&eActive Flags: &f{flags}"
+    plot-flags:
+      name: "&bPlot Flags"
+      lore:
+        - "&7Toggle PVP, flight, explosions, time, etc."
+    change-biome:
+      name: "&dChange Biome"
+      lore:
+        - "&7Change the environmental biome of this plot."
+    reset-plot:
+      name: "&cReset/Delete Plot"
+      lore:
+        - "&7Clear all structures or unclaim this plot."

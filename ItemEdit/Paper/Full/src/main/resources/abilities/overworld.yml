@@ -1,0 +1,56 @@
+abilities:
+  golem_slam:
+    cooldown: 10.0
+    damage: 6.0
+  creeper_charge:
+    cooldown: 15.0
+    duration: 10.0
+  phantom_strike:
+    cooldown: 10.0
+  bee_swarm:
+    cooldown: 15.0
+  wolf_pack:
+    cooldown: 20.0
+  poison_ivy:
+    cooldown: 15.0
+  spider_climb:
+    cooldown: 15.0
+    duration: 15.0
+  bat_glide:
+    cooldown: 15.0
+    duration: 15.0
+  slime_bounce:
+    cooldown: 8.0
+  rock_slide:
+    cooldown: 15.0
+  geyser:
+    cooldown: 10.0
+  earth_shield:
+    cooldown: 10.0
+  photosynthesis:
+    cooldown: 10.0
+  blizzard_shield:
+    cooldown: 12.0
+    duration: 8.0
+  avalanche:
+    cooldown: 12.0
+  wind_walk:
+    cooldown: 15.0
+  spore_blast:
+    cooldown: 15.0
+  squid_ink:
+    cooldown: 15.0
+  dolphin_grace:
+    cooldown: 20.0
+  miner_sense:
+    cooldown: 20.0
+  pufferfish_poison:
+    cooldown: 10.0
+  oak_skin:
+    cooldown: 15.0
+  wind_shockwave:
+    cooldown: 10.0
+  bamboo_spear:
+    cooldown: 8.0
+  tempest:
+    cooldown: 15.0

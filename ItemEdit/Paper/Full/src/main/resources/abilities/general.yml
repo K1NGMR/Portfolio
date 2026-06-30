@@ -1,0 +1,131 @@
+abilities:
+  ice_path:
+    cooldown: 12.0
+    duration: 8.0
+    radius: 3
+  frostbite:
+    cooldown: 5.0
+    damage: 4.0
+    duration: 4.0
+  blizzard:
+    cooldown: 16.0
+    radius: 4.0
+    duration: 6.0
+    damage: 1.5
+  earthquake:
+    cooldown: 10.0
+    damage: 5.0
+    radius: 5.0
+  entangle:
+    cooldown: 12.0
+    duration: 3.0
+  leaf_gust:
+    cooldown: 6.0
+    damage: 2.0
+    range: 6.0
+  thunderbolt:
+    cooldown: 8.0
+    damage: 5.0
+  overload:
+    cooldown: 18.0
+    duration: 10.0
+    extra_damage: 2.0
+  chain_lightning:
+    cooldown: 12.0
+    damage: 4.0
+    bounce_range: 6.0
+  wind_blade:
+    cooldown: 6.0
+    damage: 5.0
+  tornado_leap:
+    cooldown: 10.0
+  holy_blessing:
+    cooldown: 15.0
+    heal: 6.0
+    radius: 4.0
+  smite_aura:
+    cooldown: 20.0
+    damage: 8.0
+    radius: 5.0
+  shadow_step:
+    cooldown: 8.0
+    range: 15.0
+  death_grip:
+    cooldown: 8.0
+    range: 15.0
+  water_spout:
+    cooldown: 4.0
+    damage: 3.0
+  whirlpool:
+    cooldown: 14.0
+    radius: 5.0
+    duration: 5.0
+  magnet:
+    cooldown: 5.0
+    radius: 8.0
+  gravity_well:
+    cooldown: 15.0
+    radius: 5.0
+    duration: 6.0
+  combust:
+    cooldown: 15.0
+    duration: 10.0
+  life_steal:
+    cooldown: 15.0
+    duration: 8.0
+    steal_multiplier: 0.3
+  telekinesis:
+    cooldown: 5.0
+  haste_boost:
+    cooldown: 15.0
+    duration: 15.0
+  flight:
+    cooldown: 30.0
+    duration: 10.0
+  vanish:
+    cooldown: 20.0
+    duration: 15.0
+  toxic_cloud:
+    cooldown: 12.0
+    radius: 3.0
+    duration: 5.0
+  thorny_skin:
+    cooldown: 15.0
+    duration: 10.0
+    reflect_percent: 0.3
+  spring_jump:
+    cooldown: 5.0
+  feather_fall:
+    cooldown: 20.0
+    duration: 20.0
+  pocket_shield:
+    cooldown: 10.0
+    duration: 5.0
+  ice_barricade:
+    cooldown: 10.0
+  lava_fountain:
+    cooldown: 12.0
+  sun_strike:
+    cooldown: 15.0
+    damage: 8.0
+  dark_vortex:
+    cooldown: 15.0
+    radius: 5.0
+    duration: 5.0
+  tsunami:
+    cooldown: 15.0
+    damage: 4.0
+  supernova:
+    cooldown: 20.0
+    radius: 6.0
+    damage: 10.0
+  time_freeze:
+    cooldown: 15.0
+    radius: 6.0
+    duration: 3.0
+  rejuvenate:
+    cooldown: 15.0
+    duration: 10.0
+  adrenaline:
+    cooldown: 15.0
+    duration: 8.0

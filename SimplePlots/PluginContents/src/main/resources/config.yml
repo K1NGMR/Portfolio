@@ -1,0 +1,157 @@
+# SimplePlots Config.yml
+# General configuration options for SimplePlots
+
+# Maximum plots a player can claim if they don't have a specific plots.plot.X permission
+max-plots-per-player: 3
+
+# Inactivity Expiration settings
+inactivity-expiration:
+  enabled: true
+  # Number of days of inactivity before a plot is automatically unclaimed
+  expiry-days: 30
+  # Number of days before expiry to start warning the player (on login)
+  warning-days: 7
+  # How often to check for expired plots (in hours)
+  check-interval-hours: 12
+
+# Confirmation system settings
+confirmation:
+  # The time in seconds a user has to confirm a destructive command (e.g. /plot clear, delete, merge, unlink)
+  timeout: 30
+
+# Chat system settings
+chat:
+  # Whether plot chat logs to the server console
+  log-to-console: true
+  # Format of plot chat
+  format: "&8[&aPlot Chat&8] &7{player}: &f{message}"
+
+# Mojang API Cache settings
+uuid-cache:
+  # Update interval in hours
+  update-interval: 24
+
+# Ratings System
+ratings:
+  # Minimum rating value a user can cast
+  min-rating: 1
+  # Maximum rating value a user can cast
+  max-rating: 5
+
+# Guestbook Comments System
+comments:
+  # Maximum characters allowed in a single comment
+  max-length: 100
+  # Number of comments shown per page in /plot comments
+  page-size: 5
+
+# Plot Chest settings
+plot-chest:
+  # The time in hours before items in the plot chest expire (168 hours = 7 days)
+  expiry-hours: 168
+
+# Merged Roads Settings
+merged-roads:
+  # Allow players who merged their plots to build, decorate, etc. on the roads
+  build-enabled: true
+
+# Copy/Paste & schematic dupe protection settings
+copy-paste:
+  # Prevent copying or backing up plots containing filled chests/containers (stops dupe exploits)
+  prevent-container-dupes: true
+  # Allow non-admin users to copy entities (armor stands, item frames, etc. - default false to prevent dupes)
+  copy-entities: false
+
+# Anti-Grief & Exploit Prevention Toggles
+anti-grief:
+  # Block water/lava from flowing into claimed plots from roads or other claims
+  liquid-flow-blocking: true
+  # Block pistons outside a plot from pushing blocks into or pulling blocks out of it
+  piston-push-protection: true
+  # Nullify TNT/Creeper damage originating from outside a plot cluster
+  tnt-cannon-shield: true
+  # Block ender pearl/chorus fruit teleports into denied plots
+  teleport-bypass-prevention: true
+  # Prevent elytra flight inside a plot where the 'elytra' flag is false
+  elytra-flyover-restriction: true
+  # Stop players crawling/sneaking under walls into denied plots
+  crawl-entry-prevention: true
+  # Clip tree leaves/logs growing outside plot boundaries
+  tree-growth-containment: true
+  # Block dispensers outside a plot from firing items/projectiles into it
+  dispenser-grief-prevention: true
+
+# Support Discord Link settings
+discord:
+  # The invite URL sent to players
+  invite-url: "https://discord.gg/Sz3xJpCGKF"
+  # The hover tooltip displayed on the link in chat
+  hover-text: "&eClick to join our Discord server!"
+  # Click message format ({url} is replaced by the invite link)
+  click-message: "&aClick here to join our Support Discord: &b{url}"
+
+# Permission Packs
+permission-packs:
+  basic:
+    - plots.use
+    - plots.claim
+    - plots.auto
+    - plots.home
+    - plots.clear
+    - plots.info
+    - plots.flag.set
+    - plots.flag.remove
+    - plots.add
+    - plots.remove
+    - plots.trust
+    - plots.deny
+    - plots.undeny
+    - plots.chat
+    - plots.biome
+    - plots.download
+    - plots.rate
+    - plots.comments
+    - plots.copy
+    - plots.paste
+    - plots.middle
+    - plots.block
+    - plots.unblock
+    - plots.joinsupportdc
+  trusted:
+    - plots.use
+    - plots.claim
+    - plots.auto
+    - plots.home
+    - plots.clear
+    - plots.info
+    - plots.flag.set
+    - plots.flag.remove
+    - plots.add
+    - plots.remove
+    - plots.trust
+    - plots.deny
+    - plots.undeny
+    - plots.chat
+    - plots.biome
+    - plots.download
+    - plots.backup.save
+    - plots.backup.list
+    - plots.backup.load
+    - plots.merge
+    - plots.unlink
+    - plots.rate
+    - plots.comments
+    - plots.copy
+    - plots.paste
+    - plots.middle
+    - plots.block
+    - plots.unblock
+    - plots.joinsupportdc
+  admin:
+    - plots.admin
+    - plots.admin.bypass
+    - plots.admin.bypass.flags
+    - plots.admin.command.setup
+    - plots.admin.command.condense
+    - plots.admin.command.trim
+    - plots.admin.command.database

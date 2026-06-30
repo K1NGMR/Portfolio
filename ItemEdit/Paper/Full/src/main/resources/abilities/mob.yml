@@ -1,0 +1,46 @@
+abilities:
+  spider_web:
+    cooldown: 10.0
+  arachnid_jump:
+    cooldown: 8.0
+  venomous_strike:
+    cooldown: 10.0
+  spider_climb_passive:
+    cooldown: 15.0
+  spider_nest:
+    cooldown: 15.0
+  neurotoxin_bite:
+    cooldown: 10.0
+  cave_spider_leap:
+    cooldown: 8.0
+  venom_spit:
+    cooldown: 10.0
+  scurrying_speed:
+    cooldown: 10.0
+  cave_spider_nest:
+    cooldown: 15.0
+  dragon_breath_volley:
+    cooldown: 15.0
+  dragon_wing_buffet:
+    cooldown: 15.0
+  dragon_roar:
+    cooldown: 15.0
+  dragon_dash:
+    cooldown: 15.0
+  dragon_egg_bomb:
+    cooldown: 15.0
+  wither_skull_volley:
+    cooldown: 15.0
+  wither_explosion:
+    cooldown: 20.0
+  wither_shield:
+    cooldown: 20.0
+    duration: 8.0
+  decaying_presence:
+    cooldown: 15.0
+    duration: 10.0
+    radius: 5.0
+  wither_absorption:
+    cooldown: 15.0
+    radius: 5.0
+    drain_damage: 4.0

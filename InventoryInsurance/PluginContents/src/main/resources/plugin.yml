@@ -1,0 +1,19 @@
+name: InventoryInsurance
+version: ${project.version}
+main: com.liquade.inventoryinsurance.InventoryInsurancePlugin
+api-version: '1.20'
+depend: [Vault]
+softdepend: [PlaceholderAPI]
+description: Protect your inventory with tiers and claims.
+commands:
+  insurance:
+    description: Buy, claim, remove, reload or view placeholders for inventory insurance.
+    aliases: [insure]
+    usage: /insurance [buy/claim/status/remove/listpapi/reload]
+permissions:
+  inventoryinsurance.use:
+    description: Allows using insurance command and claiming.
+    default: true
+  inventoryinsurance.admin:
+    description: Allows reloading the plugin and administrative commands.
+    default: op

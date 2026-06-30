@@ -1,0 +1,11 @@
+name: ItemEditFull
+version: 1.0.0
+main: com.itemedit.full.ItemEditFull
+api-version: 1.20
+folia-supported: true
+description: Paid (Full) version of ItemEdit with editable item properties, premium GUI, custom ability parameters, and all abilities.
+commands:
+  itemedit:
+    aliases: [ie]
+    description: Main command to edit items.
+    permission: itemedit.use

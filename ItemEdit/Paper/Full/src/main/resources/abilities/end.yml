@@ -1,0 +1,24 @@
+abilities:
+  ender_blink:
+    cooldown: 5.0
+    range: 12.0
+  pearl_storm:
+    cooldown: 10.0
+  ender_swap:
+    cooldown: 8.0
+    range: 20.0
+  ender_rift:
+    cooldown: 14.0
+    radius: 6.0
+    duration: 3.0
+  ender_shriek:
+    cooldown: 12.0
+    radius: 8.0
+    damage: 2.0
+  shulker_levitate:
+    cooldown: 8.0
+    duration: 4.0
+  dragon_breath:
+    cooldown: 15.0
+    radius: 3.0
+    duration: 5.0

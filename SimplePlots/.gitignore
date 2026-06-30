@@ -1,0 +1,16 @@
+# Maven target
+**/target/
+target/
+
+# Embedded maven
+**/maven/
+
+# IDE settings
+.idea/
+*.iml
+.vscode/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

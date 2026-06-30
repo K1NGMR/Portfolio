@@ -1,0 +1,130 @@
+# Global configuration for ItemEdit Light version
+abilities:
+  # Lava Abilities (5)
+  lava_spit:
+    cooldown: 5.0
+    damage: 6.0
+    fire_ticks: 100
+  lava_walker:
+    cooldown: 15.0
+    duration: 10.0
+    radius: 3
+  heat_wave:
+    cooldown: 8.0
+    damage: 4.0
+    radius: 5
+    fire_ticks: 80
+  lava_pour:
+    cooldown: 12.0
+    duration: 5.0
+  fire_aura:
+    cooldown: 20.0
+    duration: 15.0
+    fire_ticks: 60
+
+  # Warden Abilities (5)
+  sonic_boom:
+    cooldown: 8.0
+    damage: 6.0
+    range: 15.0
+  sculk_infestation:
+    cooldown: 12.0
+    radius: 4.0
+    duration: 5.0
+
+  # Zombie Abilities (5)
+  zombie_swarm:
+    cooldown: 20.0
+    zombies: 2
+    duration: 15.0
+  undead_bite:
+    cooldown: 5.0
+    damage: 4.0
+    hunger_heal: 4
+
+  # Skeleton Abilities (5)
+  bone_shield:
+    cooldown: 15.0
+    duration: 10.0
+  arrow_hail:
+    cooldown: 8.0
+    arrows: 10
+
+  # End & Enderman Abilities (7)
+  ender_blink:
+    cooldown: 5.0
+    range: 12.0
+  pearl_storm:
+    cooldown: 10.0
+
+  # Nether & Meteor Abilities (9)
+  wither_decay:
+    cooldown: 6.0
+  ghast_blast:
+    cooldown: 5.0
+  meteor_strike_small:
+    cooldown: 8.0
+    damage: 4.0
+    radius: 3.0
+  meteor_strike:
+    cooldown: 12.0
+    damage: 8.0
+    radius: 4.0
+  meteor_strike_large:
+    cooldown: 18.0
+    damage: 12.0
+    radius: 6.0
+  meteor_strike_gigantic:
+    cooldown: 30.0
+    damage: 20.0
+    radius: 10.0
+
+  # General/Elemental Abilities (14)
+  ice_path:
+    cooldown: 12.0
+    duration: 8.0
+    radius: 3
+  frostbite:
+    cooldown: 5.0
+    damage: 4.0
+    duration: 4.0
+  blizzard:
+    cooldown: 16.0
+    radius: 4.0
+    duration: 6.0
+    damage: 1.5
+  earthquake:
+    cooldown: 10.0
+    damage: 5.0
+    radius: 5.0
+  entangle:
+    cooldown: 12.0
+    duration: 3.0
+  leaf_gust:
+    cooldown: 6.0
+  thunderbolt:
+    cooldown: 8.0
+    damage: 5.0
+  overload:
+    cooldown: 18.0
+    duration: 10.0
+    extra_damage: 2.0
+  chain_lightning:
+    cooldown: 12.0
+    damage: 4.0
+    bounce_range: 6.0
+  wind_blade:
+    cooldown: 6.0
+  tornado_leap:
+    cooldown: 10.0
+  holy_blessing:
+    cooldown: 15.0
+    heal: 6.0
+    radius: 4.0
+  smite_aura:
+    cooldown: 20.0
+    damage: 8.0
+    radius: 5.0
+  shadow_step:
+    cooldown: 8.0
+    range: 15.0

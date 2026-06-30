@@ -1,0 +1,26 @@
+# SimplePlots Worlds Configuration
+# Configure per-world generator settings and limits.
+
+worlds:
+  plotworld:
+    plot-size: 32
+    road-width: 7
+    floor-height: 64
+    floor-block: "GRASS_BLOCK"
+    filler-block: "DIRT"
+    bed-block: "BEDROCK"
+    road-block: "SMOOTH_STONE"
+    wall-block-claimed: "OAK_SLAB"
+    wall-block-unclaimed: "STONE_SLAB"
+    border-block: "STONE_BRICKS"
+    schematic-on-claim: false
+    schematic-name: "plot.schem"
+    road-schematic: false
+    infinite-saturation: true
+    do-daylight-cycle: false
+    do-mob-spawning: false
+    economy:
+      claim-price: 100.0
+      merge-price: 250.0
+      sell-price: 50.0
+      clear-price: 50.0

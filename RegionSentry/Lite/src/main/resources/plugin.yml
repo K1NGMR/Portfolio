@@ -1,0 +1,12 @@
+name: RegionSentryLite
+version: 1.0
+main: com.regionsentry.lite.RegionSentryLite
+api-version: 1.20
+folia-supported: true
+commands:
+  regionsentry:
+    description: Open the RegionSentry regional performance grid gui map.
+    permission: regionsentry.admin
+  lagmachine:
+    description: Spawns lag entities and starts load loops to test the region thread.
+    permission: regionsentry.admin

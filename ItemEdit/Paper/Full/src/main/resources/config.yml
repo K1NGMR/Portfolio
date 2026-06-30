@@ -1,0 +1,850 @@
+# Global configuration for ItemEdit Full version
+abilities:
+  # Lava Abilities (6)
+  lava_spit:
+    cooldown: 5.0
+    damage: 6.0
+    fire_ticks: 100
+  lava_walker:
+    cooldown: 15.0
+    duration: 10.0
+    radius: 3
+  heat_wave:
+    cooldown: 8.0
+    damage: 4.0
+    radius: 5
+    fire_ticks: 80
+  lava_pour:
+    cooldown: 12.0
+    duration: 5.0
+  fire_aura:
+    cooldown: 20.0
+    duration: 15.0
+    fire_ticks: 60
+  lava_absorption:
+    cooldown: 30.0
+    radius: 4
+    hunger_heal: 6
+    health_heal: 4.0
+    duration: 10.0
+
+  # Warden Abilities (5)
+  sonic_boom:
+    cooldown: 8.0
+    damage: 6.0
+    range: 15.0
+  sculk_infestation:
+    cooldown: 12.0
+    radius: 4.0
+    duration: 5.0
+  warden_sonic_clap:
+    cooldown: 8.0
+    damage: 4.0
+    range: 6.0
+  sculk_sensor_trap:
+    cooldown: 15.0
+    damage: 6.0
+    radius: 4.0
+  warden_rage:
+    cooldown: 20.0
+    duration: 8.0
+
+  # Zombie Abilities (5)
+  zombie_swarm:
+    cooldown: 20.0
+    zombies: 2
+    duration: 15.0
+  undead_bite:
+    cooldown: 5.0
+    damage: 4.0
+    hunger_heal: 4
+  zombie_infection:
+    cooldown: 15.0
+    duration: 10.0
+  zombie_rage:
+    cooldown: 18.0
+    duration: 6.0
+  undead_call:
+    cooldown: 10.0
+    range: 20.0
+
+  # Skeleton Abilities (5)
+  bone_shield:
+    cooldown: 15.0
+    duration: 10.0
+  arrow_hail:
+    cooldown: 8.0
+    arrows: 10
+  skeleton_archers:
+    cooldown: 20.0
+    skeletons: 2
+    duration: 15.0
+  bone_trap:
+    cooldown: 12.0
+    duration: 3.0
+  wither_skeleton_strike:
+    cooldown: 10.0
+    duration: 10.0
+
+  # End & Enderman Abilities (7)
+  ender_blink:
+    cooldown: 5.0
+    range: 12.0
+  pearl_storm:
+    cooldown: 10.0
+  ender_swap:
+    cooldown: 8.0
+    range: 20.0
+  ender_rift:
+    cooldown: 14.0
+    radius: 6.0
+    duration: 3.0
+  ender_shriek:
+    cooldown: 12.0
+    radius: 8.0
+    damage: 2.0
+  shulker_levitate:
+    cooldown: 8.0
+    duration: 4.0
+  dragon_breath:
+    cooldown: 15.0
+    radius: 3.0
+    duration: 5.0
+
+  # Nether & Meteor Abilities (9)
+  wither_decay:
+    cooldown: 6.0
+  ghast_blast:
+    cooldown: 5.0
+  blaze_rod_volley:
+    cooldown: 8.0
+  magma_spit:
+    cooldown: 10.0
+    duration: 5.0
+  wither_blast:
+    cooldown: 12.0
+    radius: 6.0
+    damage: 6.0
+  meteor_strike_small:
+    cooldown: 8.0
+    damage: 4.0
+    radius: 3.0
+  meteor_strike:
+    cooldown: 12.0
+    damage: 8.0
+    radius: 4.0
+  meteor_strike_large:
+    cooldown: 18.0
+    damage: 12.0
+    radius: 6.0
+  meteor_strike_gigantic:
+    cooldown: 30.0
+    damage: 20.0
+    radius: 10.0
+
+  # General/Elemental Abilities (39)
+  ice_path:
+    cooldown: 12.0
+    duration: 8.0
+    radius: 3
+  frostbite:
+    cooldown: 5.0
+    damage: 4.0
+    duration: 4.0
+  blizzard:
+    cooldown: 16.0
+    radius: 4.0
+    duration: 6.0
+    damage: 1.5
+  earthquake:
+    cooldown: 10.0
+    damage: 5.0
+    radius: 5.0
+  entangle:
+    cooldown: 12.0
+    duration: 3.0
+  leaf_gust:
+    cooldown: 6.0
+    damage: 2.0
+    range: 6.0
+  thunderbolt:
+    cooldown: 8.0
+    damage: 5.0
+  overload:
+    cooldown: 18.0
+    duration: 10.0
+    extra_damage: 2.0
+  chain_lightning:
+    cooldown: 12.0
+    damage: 4.0
+    bounce_range: 6.0
+  wind_blade:
+    cooldown: 6.0
+    damage: 5.0
+  tornado_leap:
+    cooldown: 10.0
+  holy_blessing:
+    cooldown: 15.0
+    heal: 6.0
+    radius: 4.0
+  smite_aura:
+    cooldown: 20.0
+    damage: 8.0
+    radius: 5.0
+  shadow_step:
+    cooldown: 8.0
+    range: 15.0
+  death_grip:
+    cooldown: 8.0
+    range: 15.0
+  water_spout:
+    cooldown: 4.0
+    damage: 3.0
+  whirlpool:
+    cooldown: 14.0
+    radius: 5.0
+    duration: 5.0
+  magnet:
+    cooldown: 5.0
+    radius: 8.0
+  gravity_well:
+    cooldown: 15.0
+    radius: 5.0
+    duration: 6.0
+  combust:
+    cooldown: 15.0
+    duration: 10.0
+  life_steal:
+    cooldown: 15.0
+    duration: 8.0
+    steal_multiplier: 0.3
+  telekinesis:
+    cooldown: 5.0
+  haste_boost:
+    cooldown: 15.0
+    duration: 15.0
+  flight:
+    cooldown: 30.0
+    duration: 10.0
+  vanish:
+    cooldown: 20.0
+    duration: 15.0
+  toxic_cloud:
+    cooldown: 12.0
+    radius: 3.0
+    duration: 5.0
+  thorny_skin:
+    cooldown: 15.0
+    duration: 10.0
+    reflect_percent: 0.3
+  spring_jump:
+    cooldown: 5.0
+  feather_fall:
+    cooldown: 20.0
+    duration: 20.0
+  pocket_shield:
+    cooldown: 10.0
+    duration: 5.0
+  ice_barricade:
+    cooldown: 10.0
+  lava_fountain:
+    cooldown: 12.0
+  sun_strike:
+    cooldown: 15.0
+    damage: 8.0
+  dark_vortex:
+    cooldown: 15.0
+    radius: 5.0
+    duration: 5.0
+  tsunami:
+    cooldown: 15.0
+    damage: 4.0
+  supernova:
+    cooldown: 20.0
+    radius: 6.0
+    damage: 10.0
+  time_freeze:
+    cooldown: 15.0
+    radius: 6.0
+    duration: 3.0
+  rejuvenate:
+    cooldown: 15.0
+    duration: 10.0
+  adrenaline:
+    cooldown: 15.0
+    duration: 8.0
+
+  # Overworld Abilities (25)
+  golem_slam:
+    cooldown: 10.0
+    damage: 6.0
+  creeper_charge:
+    cooldown: 15.0
+    duration: 10.0
+  phantom_strike:
+    cooldown: 10.0
+  bee_swarm:
+    cooldown: 15.0
+  wolf_pack:
+    cooldown: 20.0
+  poison_ivy:
+    cooldown: 15.0
+  spider_climb:
+    cooldown: 15.0
+    duration: 15.0
+  bat_glide:
+    cooldown: 15.0
+    duration: 15.0
+  slime_bounce:
+    cooldown: 8.0
+  rock_slide:
+    cooldown: 15.0
+  geyser:
+    cooldown: 10.0
+  earth_shield:
+    cooldown: 10.0
+  photosynthesis:
+    cooldown: 10.0
+  blizzard_shield:
+    cooldown: 12.0
+    duration: 8.0
+  avalanche:
+    cooldown: 12.0
+  wind_walk:
+    cooldown: 15.0
+  spore_blast:
+    cooldown: 15.0
+  squid_ink:
+    cooldown: 15.0
+  dolphin_grace:
+    cooldown: 20.0
+  miner_sense:
+    cooldown: 20.0
+  pufferfish_poison:
+    cooldown: 10.0
+  oak_skin:
+    cooldown: 15.0
+  wind_shockwave:
+    cooldown: 10.0
+  bamboo_spear:
+    cooldown: 8.0
+  tempest:
+    cooldown: 15.0
+
+  # Mob-themed (20)
+  spider_web:
+    cooldown: 10.0
+  arachnid_jump:
+    cooldown: 8.0
+  venomous_strike:
+    cooldown: 10.0
+  spider_climb_passive:
+    cooldown: 15.0
+  spider_nest:
+    cooldown: 15.0
+  neurotoxin_bite:
+    cooldown: 10.0
+  cave_spider_leap:
+    cooldown: 8.0
+  venom_spit:
+    cooldown: 10.0
+  scurrying_speed:
+    cooldown: 10.0
+  cave_spider_nest:
+    cooldown: 15.0
+  dragon_breath_volley:
+    cooldown: 15.0
+  dragon_wing_buffet:
+    cooldown: 15.0
+  dragon_roar:
+    cooldown: 15.0
+  dragon_dash:
+    cooldown: 15.0
+  dragon_egg_bomb:
+    cooldown: 15.0
+  wither_skull_volley:
+    cooldown: 15.0
+  wither_explosion:
+    cooldown: 20.0
+  wither_shield:
+    cooldown: 20.0
+    duration: 8.0
+  decaying_presence:
+    cooldown: 15.0
+    duration: 10.0
+    radius: 5.0
+  wither_absorption:
+    cooldown: 15.0
+    radius: 5.0
+    drain_damage: 4.0
+
+  # 129 New Special Abilities
+  # Nether Expansion (20)
+  magma_shield:
+    cooldown: 15.0
+  magma_jump:
+    cooldown: 8.0
+  magma_trail:
+    cooldown: 12.0
+  magma_fist:
+    cooldown: 10.0
+  blaze_speed:
+    cooldown: 10.0
+  blaze_aura:
+    cooldown: 15.0
+  blaze_flight:
+    cooldown: 12.0
+  blaze_barrage:
+    cooldown: 15.0
+  ghast_float:
+    cooldown: 15.0
+  ghast_fireball:
+    cooldown: 20.0
+  ghast_scream:
+    cooldown: 10.0
+  ghast_tear:
+    cooldown: 15.0
+  piglin_greed:
+    cooldown: 20.0
+  piglin_crossbow:
+    cooldown: 10.0
+  piglin_rage:
+    cooldown: 18.0
+  piglin_barter:
+    cooldown: 20.0
+  nether_quake:
+    cooldown: 15.0
+  nether_heat:
+    cooldown: 15.0
+  nether_portal_rift:
+    cooldown: 12.0
+  nether_soul_drain:
+    cooldown: 15.0
+
+  # Ocean / Aquatic (20)
+  guardian_beam:
+    cooldown: 10.0
+  guardian_thorns:
+    cooldown: 15.0
+  elder_guardian_fatigue:
+    cooldown: 20.0
+  elder_guardian_ghost:
+    cooldown: 15.0
+  drowned_trident:
+    cooldown: 10.0
+  drowned_water_leap:
+    cooldown: 8.0
+  drowned_conduit_power:
+    cooldown: 15.0
+  drowned_depth_strider:
+    cooldown: 15.0
+  dolphin_grace:
+    cooldown: 15.0
+  dolphin_leap:
+    cooldown: 8.0
+  dolphin_sonic:
+    cooldown: 15.0
+  turtle_shell:
+    cooldown: 15.0
+  turtle_fortitude:
+    cooldown: 15.0
+  squid_ink:
+    cooldown: 15.0
+  squid_blindness:
+    cooldown: 15.0
+  squid_propulsion:
+    cooldown: 8.0
+  fish_agility:
+    cooldown: 15.0
+  fish_water_breathing:
+    cooldown: 15.0
+  ocean_tempest:
+    cooldown: 15.0
+  ocean_tsunami:
+    cooldown: 15.0
+
+  # Sky / Aero (20)
+  phantom_glide:
+    cooldown: 15.0
+  phantom_swoop:
+    cooldown: 8.0
+  phantom_insomnia:
+    cooldown: 15.0
+  phantom_bite:
+    cooldown: 15.0
+  breeze_wind_charge:
+    cooldown: 10.0
+  breeze_deflect:
+    cooldown: 15.0
+  breeze_leap:
+    cooldown: 8.0
+  breeze_gust:
+    cooldown: 15.0
+  bat_sonar:
+    cooldown: 15.0
+  bat_screech:
+    cooldown: 15.0
+  bat_flight:
+    cooldown: 8.0
+  chicken_egg_volley:
+    cooldown: 10.0
+  chicken_feather_shield:
+    cooldown: 15.0
+  chicken_slow_fall:
+    cooldown: 15.0
+  bee_sting:
+    cooldown: 15.0
+  bee_honey_trap:
+    cooldown: 15.0
+  bee_swarm:
+    cooldown: 20.0
+  bee_pollinate:
+    cooldown: 15.0
+  sky_lightning_strike:
+    cooldown: 15.0
+  sky_zephyr:
+    cooldown: 15.0
+
+  # Ancient / Sculk (10)
+  sculk_shrieker_sound:
+    cooldown: 15.0
+  sculk_sensor_ping:
+    cooldown: 15.0
+  sculk_blindness_aura:
+    cooldown: 15.0
+  sculk_infection_strike:
+    cooldown: 15.0
+  sculk_vein_spread:
+    cooldown: 15.0
+  sculk_catalyst_heal:
+    cooldown: 15.0
+  warden_sonic_strike:
+    cooldown: 15.0
+  warden_darkness_burst:
+    cooldown: 15.0
+  warden_sculk_step:
+    cooldown: 15.0
+  warden_vibration_sense:
+    cooldown: 15.0
+
+  # Ice / Tundra (10)
+  stray_slowness_arrow:
+    cooldown: 10.0
+  stray_freeze_touch:
+    cooldown: 15.0
+  stray_snow_storm:
+    cooldown: 15.0
+  snow_golem_snowball:
+    cooldown: 10.0
+  snow_golem_trail:
+    cooldown: 15.0
+  snow_golem_freeze:
+    cooldown: 15.0
+  ice_spike_summon:
+    cooldown: 15.0
+  ice_shield:
+    cooldown: 15.0
+  ice_skate:
+    cooldown: 15.0
+  ice_frostbite:
+    cooldown: 15.0
+
+  # Desert / Mesa (10)
+  husk_hunger_strike:
+    cooldown: 15.0
+  husk_sand_storm:
+    cooldown: 15.0
+  husk_desert_heat:
+    cooldown: 15.0
+  shulker_levitation_bullet:
+    cooldown: 15.0
+  shulker_shell_close:
+    cooldown: 15.0
+  shulker_teleport:
+    cooldown: 12.0
+  desert_mirage:
+    cooldown: 15.0
+  desert_quicksand:
+    cooldown: 15.0
+  desert_cactus_thorns:
+    cooldown: 15.0
+  desert_sunstroke:
+    cooldown: 15.0
+
+  # Magical / Illager (10)
+  evoker_fangs:
+    cooldown: 15.0
+  evoker_vexes:
+    cooldown: 20.0
+  vindicator_axe_rush:
+    cooldown: 12.0
+  vindicator_rage:
+    cooldown: 15.0
+  illusioner_clone:
+    cooldown: 15.0
+  illusioner_blindness:
+    cooldown: 15.0
+  witch_potion_throw:
+    cooldown: 10.0
+  witch_potion_drink:
+    cooldown: 15.0
+  witch_brew_cauldron:
+    cooldown: 15.0
+  witch_poison_cloud:
+    cooldown: 15.0
+
+  # Legendary Combat Strikes (29)
+  flame_strike:
+    cooldown: 15.0
+  tsunami_slash:
+    cooldown: 15.0
+  wind_gust_slash:
+    cooldown: 15.0
+  void_slayer:
+    cooldown: 15.0
+  earth_smash:
+    cooldown: 15.0
+  thunder_clap:
+    cooldown: 15.0
+  holy_purify:
+    cooldown: 15.0
+  shadow_strike:
+    cooldown: 15.0
+  meteor_slam:
+    cooldown: 15.0
+  lunar_crescent:
+    cooldown: 15.0
+  solar_flare:
+    cooldown: 15.0
+  cosmic_rift:
+    cooldown: 15.0
+  plague_strike:
+    cooldown: 15.0
+  frost_giant_slam:
+    cooldown: 15.0
+  vampiric_edge:
+    cooldown: 15.0
+  reaper_scythe:
+    cooldown: 15.0
+  executioner_chop:
+    cooldown: 15.0
+  gravity_pull_strike:
+    cooldown: 15.0
+  magnetic_draw:
+    cooldown: 15.0
+  toxic_slash:
+    cooldown: 15.0
+  wither_cleave:
+    cooldown: 15.0
+  phoenix_strike:
+    cooldown: 15.0
+  glacier_crash:
+    cooldown: 15.0
+  tempest_strike:
+    cooldown: 15.0
+  sculk_shatter:
+    cooldown: 15.0
+  volcanic_rupture:
+    cooldown: 15.0
+  breeze_burst_strike:
+    cooldown: 15.0
+  dragon_claw_slash:
+    cooldown: 15.0
+  abyssal_drown_strike:
+    cooldown: 15.0
+
+  # 100 More Expansion Abilities
+  wither_skull_bomb:
+    cooldown: 15.0
+  dragon_breath_ground:
+    cooldown: 15.0
+  creeper_detonation:
+    cooldown: 15.0
+  shulker_gravity_shift:
+    cooldown: 15.0
+  warden_sculk_infection:
+    cooldown: 15.0
+  evoker_fang_circle:
+    cooldown: 15.0
+  evoker_vex_swarm:
+    cooldown: 15.0
+  witch_elixir:
+    cooldown: 15.0
+  witch_poison_splash:
+    cooldown: 15.0
+  phantom_spectre:
+    cooldown: 15.0
+  stray_frost_hail:
+    cooldown: 15.0
+  husk_desiccation:
+    cooldown: 15.0
+  magma_cube_slam:
+    cooldown: 15.0
+  blaze_inferno:
+    cooldown: 15.0
+  piglin_golden_barrage:
+    cooldown: 15.0
+  drowned_whirlpool:
+    cooldown: 15.0
+  guardian_laser_burst:
+    cooldown: 15.0
+  elder_guardian_fatigue_blast:
+    cooldown: 15.0
+  ravager_charge:
+    cooldown: 15.0
+  ravager_roar:
+    cooldown: 15.0
+  illusioner_mirror:
+    cooldown: 15.0
+  illusioner_blind_volley:
+    cooldown: 15.0
+  pillager_raid_call:
+    cooldown: 15.0
+  slime_split:
+    cooldown: 15.0
+  iron_golem_toss:
+    cooldown: 15.0
+  iron_golem_shield:
+    cooldown: 15.0
+  spider_nest_trap:
+    cooldown: 15.0
+  fire_meteor:
+    cooldown: 15.0
+  fire_wall:
+    cooldown: 15.0
+  fire_nova:
+    cooldown: 15.0
+  ice_nova:
+    cooldown: 15.0
+  ice_prison:
+    cooldown: 15.0
+  ice_blizzard:
+    cooldown: 15.0
+  lightning_chain:
+    cooldown: 15.0
+  lightning_storm:
+    cooldown: 15.0
+  lightning_dash:
+    cooldown: 15.0
+  earth_wall:
+    cooldown: 15.0
+  earth_quake:
+    cooldown: 15.0
+  earth_tomb:
+    cooldown: 15.0
+  wind_push:
+    cooldown: 15.0
+  wind_pull:
+    cooldown: 15.0
+  wind_cyclone:
+    cooldown: 15.0
+  light_heal:
+    cooldown: 15.0
+  light_beam:
+    cooldown: 15.0
+  light_flash:
+    cooldown: 15.0
+  shadow_rift:
+    cooldown: 15.0
+  shadow_walk:
+    cooldown: 15.0
+  shadow_clone:
+    cooldown: 15.0
+  void_collapse:
+    cooldown: 15.0
+  void_grasp:
+    cooldown: 15.0
+  void_warp:
+    cooldown: 15.0
+  cosmic_shower:
+    cooldown: 15.0
+  cosmic_singularity:
+    cooldown: 15.0
+  cosmic_shield:
+    cooldown: 15.0
+  acid_spray:
+    cooldown: 15.0
+  acid_rain:
+    cooldown: 15.0
+  acid_puddle:
+    cooldown: 15.0
+  assassin_backstab:
+    cooldown: 15.0
+  assassin_smoke_bomb:
+    cooldown: 15.0
+  assassin_poison_dart:
+    cooldown: 15.0
+  tank_provoke:
+    cooldown: 15.0
+  tank_immovability:
+    cooldown: 15.0
+  tank_last_stand:
+    cooldown: 15.0
+  berserker_bloodlust:
+    cooldown: 15.0
+  berserker_charge:
+    cooldown: 15.0
+  berserker_rage:
+    cooldown: 15.0
+  healer_circle:
+    cooldown: 15.0
+  healer_purify:
+    cooldown: 15.0
+  healer_resurrection:
+    cooldown: 15.0
+  archer_volley:
+    cooldown: 15.0
+  archer_snipe:
+    cooldown: 15.0
+  archer_escape:
+    cooldown: 15.0
+  wizard_mana_shield:
+    cooldown: 15.0
+  wizard_teleport:
+    cooldown: 15.0
+  wizard_spell_steal:
+    cooldown: 15.0
+  paladin_smite:
+    cooldown: 15.0
+  paladin_shield:
+    cooldown: 15.0
+  paladin_aura:
+    cooldown: 15.0
+  summoner_skeleton:
+    cooldown: 15.0
+  summoner_golem:
+    cooldown: 15.0
+  summoner_wolfpack:
+    cooldown: 15.0
+  brawler_uppercut:
+    cooldown: 15.0
+  brawler_tackle:
+    cooldown: 15.0
+  brawler_shockwave:
+    cooldown: 15.0
+  ninja_teleport:
+    cooldown: 15.0
+  ninja_dodge:
+    cooldown: 15.0
+  ninja_star_volley:
+    cooldown: 15.0
+  grappling_hook:
+    cooldown: 15.0
+  magnet_chest:
+    cooldown: 15.0
+  harvest_bloom:
+    cooldown: 15.0
+  mineral_sense:
+    cooldown: 15.0
+  time_leap:
+    cooldown: 15.0
+  gravity_well_passive:
+    cooldown: 15.0
+  speed_run:
+    cooldown: 15.0
+  super_drill:
+    cooldown: 15.0
+  ender_swap_strike:
+    cooldown: 15.0
+  lunar_blessing:
+    cooldown: 15.0

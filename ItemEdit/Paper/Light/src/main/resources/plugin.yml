@@ -1,0 +1,11 @@
+name: ItemEditLight
+version: 1.0.0
+main: com.itemedit.light.ItemEditLight
+api-version: 1.20
+folia-supported: true
+description: Free (Light) version of ItemEdit with editable item properties and up to 50 abilities.
+commands:
+  itemedit:
+    aliases: [ie]
+    description: Main command to edit items.
+    permission: itemedit.use

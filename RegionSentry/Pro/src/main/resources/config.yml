@@ -1,0 +1,106 @@
+# RegionSentry Pro Configuration File
+
+# Enter your Discord Webhook URL here to receive automated background performance alerts
+# If a region thread drops below 15 TPS for more than 30 consecutive seconds, an alert will be sent.
+discord-webhook-url: "YOUR_WEBHOOK_URL_HERE"
+
+# Region-based entity limits (Pro version)
+# If a region exceeds the limit for a specific EntityType, new spawns of that type are cancelled.
+region-entity-limits:
+  COW: 150
+  MINECART: 200
+  CHICKEN: 150
+
+# Network Proxy Integration (Velocity / BungeeCord)
+# If enabled, triggers a plugin messaging alert to the proxy when a region thread experiences severe lag.
+proxy-integration:
+  enabled: true
+
+# Tiered Entity Despawn Weighting Engine
+# Automatically cleans up entities in strained region threads sequentially.
+tiered-despawn:
+  enabled: true
+  phase-1:
+    mspt-threshold: 45.0
+    # Remove low-value entities (items, projectiles, non-breeding passives)
+    entities:
+      - DROPPED_ITEM
+      - ARROW
+      - SPECTRAL_ARROW
+      - EGG
+      - SNOWBALL
+      - CHICKEN
+      - PIG
+  phase-2:
+    # Triggered 10 seconds later if performance remains strained
+    entities:
+      - ZOMBIE
+      - SKELETON
+      - CREEPER
+      - SPIDER
+      - SLIME
+
+# ==========================================
+# ADVANCED CUSTOMIZATION (Pro Custom Settings)
+# ==========================================
+
+# Performance Status Thresholds for the GUI and dashboard
+status-thresholds:
+  stable:
+    mspt: 30.0
+    color: "GREEN"
+    status-text: "STABLE"
+    material: "GREEN_STAINED_GLASS_PANE"
+  strained:
+    mspt: 50.0
+    color: "GOLD"
+    status-text: "STRAINED"
+    material: "YELLOW_STAINED_GLASS_PANE"
+  lagging:
+    color: "RED"
+    status-text: "LAGGING"
+    material: "RED_STAINED_GLASS_PANE"
+
+# GUI Refresh Rate in seconds
+gui-refresh-interval-seconds: 3
+
+# Performance Monitor and Async Watchdog settings
+performance-monitor:
+  scan-interval-seconds: 5
+  watchdog-stall-ms: 2000
+  smart-autosave-mspt-threshold: 30.0
+
+# Alert Manager performance alert thresholds
+alert-manager:
+  tps-threshold: 15.0
+  alert-duration-seconds: 30
+  check-interval-seconds: 5
+
+# Adaptive Ticking and brain freeze mitigations
+adaptive-ticking:
+  check-interval-seconds: 5
+  sim-distance-threshold-mspt: 45.0
+  sim-distance-value: 2
+  brain-freeze-threshold-mspt: 40.0
+  recovery-threshold-mspt: 30.0
+
+# Passive loading / AFK Player Optimization
+afk-optimization:
+  check-interval-minutes: 1
+  afk-threshold-minutes: 30
+  afk-sim-distance: 2
+  brain-freeze-on-afk: true
+
+# Packet Storm and Network Exploit Detection
+packet-storm:
+  check-interval-seconds: 1
+  gui-flag-threshold-packets-per-sec: 500
+  staff-alert-threshold-packets-per-sec: 1000
+  staff-alert-mspt-threshold: 35.0
+  alert-cooldown-ms: 10000
+
+# Lag Machine Presets
+lag-machine:
+  entities-to-spawn: 500
+  cpu-spin-duration-nanoseconds: 40000000
+  block-update-radius: 2

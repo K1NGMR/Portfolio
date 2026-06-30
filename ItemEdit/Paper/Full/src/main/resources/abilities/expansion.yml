@@ -1,0 +1,545 @@
+abilities:
+  # Nether Expansion (20)
+  magma_shield:
+    cooldown: 15.0
+    duration: 15.0
+    amplifier: 0
+  magma_jump:
+    cooldown: 8.0
+    velocity: 1.2
+  magma_trail:
+    cooldown: 12.0
+    duration_seconds: 5
+    damage: 1.5
+  magma_fist:
+    cooldown: 10.0
+    damage: 3.0
+    fire_ticks: 100
+  blaze_speed:
+    cooldown: 10.0
+    duration: 10.0
+    amplifier: 1
+  blaze_aura:
+    cooldown: 15.0
+    radius: 4.0
+    damage: 2.0
+    fire_ticks: 80
+  blaze_flight:
+    cooldown: 12.0
+    speed_multiplier: 1.5
+  blaze_barrage:
+    cooldown: 15.0
+  ghast_float:
+    cooldown: 15.0
+    duration: 10.0
+  ghast_fireball:
+    cooldown: 20.0
+    yield: 4.0
+  ghast_scream:
+    cooldown: 10.0
+  ghast_tear:
+    cooldown: 15.0
+    duration: 5.0
+    amplifier: 1
+  piglin_greed:
+    cooldown: 20.0
+    duration: 8.0
+    amplifier: 0
+  piglin_crossbow:
+    cooldown: 10.0
+  piglin_rage:
+    cooldown: 18.0
+  piglin_barter:
+    cooldown: 20.0
+    duration: 30.0
+    amplifier: 1
+  nether_quake:
+    cooldown: 15.0
+  nether_heat:
+    cooldown: 15.0
+  nether_portal_rift:
+    cooldown: 12.0
+    range: 6.0
+  nether_soul_drain:
+    cooldown: 15.0
+
+  # Ocean / Aquatic (20)
+  guardian_beam:
+    cooldown: 10.0
+  guardian_thorns:
+    cooldown: 15.0
+  elder_guardian_fatigue:
+    cooldown: 20.0
+  elder_guardian_ghost:
+    cooldown: 15.0
+  drowned_trident:
+    cooldown: 10.0
+  drowned_water_leap:
+    cooldown: 8.0
+    velocity: 1.1
+  drowned_conduit_power:
+    cooldown: 15.0
+    duration: 15.0
+  drowned_depth_strider:
+    cooldown: 15.0
+    duration: 15.0
+  dolphin_grace:
+    cooldown: 15.0
+    duration: 20.0
+  dolphin_leap:
+    cooldown: 8.0
+    speed_multiplier: 1.8
+  dolphin_sonic:
+    cooldown: 15.0
+  turtle_shell:
+    cooldown: 15.0
+    duration: 10.0
+    amplifier: 2
+  turtle_fortitude:
+    cooldown: 15.0
+  squid_ink:
+    cooldown: 15.0
+  squid_blindness:
+    cooldown: 15.0
+  squid_propulsion:
+    cooldown: 8.0
+    speed_multiplier: -1.5
+  fish_agility:
+    cooldown: 15.0
+  fish_water_breathing:
+    cooldown: 15.0
+    duration: 60.0
+  ocean_tempest:
+    cooldown: 15.0
+    damage: 4.0
+    radius: 4.0
+  ocean_tsunami:
+    cooldown: 15.0
+    damage: 3.5
+    range: 6.0
+
+  # Sky / Aero (20)
+  phantom_glide:
+    cooldown: 15.0
+    duration: 10.0
+  phantom_swoop:
+    cooldown: 8.0
+    speed_multiplier: 1.8
+  phantom_insomnia:
+    cooldown: 15.0
+  phantom_bite:
+    cooldown: 15.0
+  breeze_wind_charge:
+    cooldown: 10.0
+  breeze_deflect:
+    cooldown: 15.0
+    duration: 10.0
+  breeze_leap:
+    cooldown: 8.0
+    velocity: 1.4
+  breeze_gust:
+    cooldown: 15.0
+    damage: 2.0
+    radius: 4.0
+  bat_sonar:
+    cooldown: 15.0
+  bat_screech:
+    cooldown: 15.0
+  bat_flight:
+    cooldown: 8.0
+    velocity: 0.7
+  chicken_egg_volley:
+    cooldown: 10.0
+  chicken_feather_shield:
+    cooldown: 15.0
+    duration: 5.0
+  chicken_slow_fall:
+    cooldown: 15.0
+    duration: 15.0
+  bee_sting:
+    cooldown: 15.0
+  bee_honey_trap:
+    cooldown: 15.0
+  bee_swarm:
+    cooldown: 20.0
+  bee_pollinate:
+    cooldown: 15.0
+  sky_lightning_strike:
+    cooldown: 15.0
+  sky_zephyr:
+    cooldown: 15.0
+
+  # Ancient / Sculk (10)
+  sculk_shrieker_sound:
+    cooldown: 15.0
+  sculk_sensor_ping:
+    cooldown: 15.0
+    duration: 5.0
+    radius: 10.0
+  sculk_blindness_aura:
+    cooldown: 15.0
+    duration: 10.0
+  sculk_infection_strike:
+    cooldown: 15.0
+    duration: 5.0
+  sculk_vein_spread:
+    cooldown: 15.0
+  sculk_catalyst_heal:
+    cooldown: 15.0
+  warden_sonic_strike:
+    cooldown: 15.0
+    damage: 6.0
+  warden_darkness_burst:
+    cooldown: 15.0
+    damage: 3.0
+    duration: 6.0
+  warden_sculk_step:
+    cooldown: 15.0
+    duration: 15.0
+  warden_vibration_sense:
+    cooldown: 15.0
+    duration: 5.0
+
+  # Ice / Tundra (10)
+  stray_slowness_arrow:
+    cooldown: 10.0
+  stray_freeze_touch:
+    cooldown: 15.0
+  stray_snow_storm:
+    cooldown: 15.0
+  snow_golem_snowball:
+    cooldown: 10.0
+  snow_golem_trail:
+    cooldown: 15.0
+  snow_golem_freeze:
+    cooldown: 15.0
+  ice_spike_summon:
+    cooldown: 15.0
+  ice_shield:
+    cooldown: 15.0
+  ice_skate:
+    cooldown: 15.0
+  ice_frostbite:
+    cooldown: 15.0
+
+  # Desert / Mesa (10)
+  husk_hunger_strike:
+    cooldown: 15.0
+    duration: 6.0
+    amplifier: 2
+  husk_sand_storm:
+    cooldown: 15.0
+  husk_desert_heat:
+    cooldown: 15.0
+  shulker_levitation_bullet:
+    cooldown: 15.0
+  shulker_shell_close:
+    cooldown: 15.0
+  shulker_teleport:
+    cooldown: 12.0
+  desert_mirage:
+    cooldown: 15.0
+  desert_quicksand:
+    cooldown: 15.0
+  desert_cactus_thorns:
+    cooldown: 15.0
+  desert_sunstroke:
+    cooldown: 15.0
+
+  # Magical / Illager (10)
+  evoker_fangs:
+    cooldown: 15.0
+  evoker_vexes:
+    cooldown: 20.0
+  vindicator_axe_rush:
+    cooldown: 12.0
+  vindicator_rage:
+    cooldown: 15.0
+  illusioner_clone:
+    cooldown: 15.0
+  illusioner_blindness:
+    cooldown: 15.0
+  witch_potion_throw:
+    cooldown: 10.0
+  witch_potion_drink:
+    cooldown: 15.0
+  witch_brew_cauldron:
+    cooldown: 15.0
+  witch_poison_cloud:
+    cooldown: 15.0
+
+  # Legendary Combat Strikes (29)
+  flame_strike:
+    cooldown: 15.0
+  tsunami_slash:
+    cooldown: 15.0
+  wind_gust_slash:
+    cooldown: 15.0
+  void_slayer:
+    cooldown: 15.0
+  earth_smash:
+    cooldown: 15.0
+  thunder_clap:
+    cooldown: 15.0
+  holy_purify:
+    cooldown: 15.0
+  shadow_strike:
+    cooldown: 15.0
+  meteor_slam:
+    cooldown: 15.0
+  lunar_crescent:
+    cooldown: 15.0
+  solar_flare:
+    cooldown: 15.0
+  cosmic_rift:
+    cooldown: 15.0
+  plague_strike:
+    cooldown: 15.0
+  frost_giant_slam:
+    cooldown: 15.0
+  vampiric_edge:
+    cooldown: 15.0
+  reaper_scythe:
+    cooldown: 15.0
+  executioner_chop:
+    cooldown: 15.0
+  gravity_pull_strike:
+    cooldown: 15.0
+  magnetic_draw:
+    cooldown: 15.0
+  toxic_slash:
+    cooldown: 15.0
+  wither_cleave:
+    cooldown: 15.0
+  phoenix_strike:
+    cooldown: 15.0
+  glacier_crash:
+    cooldown: 15.0
+  tempest_strike:
+    cooldown: 15.0
+  sculk_shatter:
+    cooldown: 15.0
+  volcanic_rupture:
+    cooldown: 15.0
+  breeze_burst_strike:
+    cooldown: 15.0
+  dragon_claw_slash:
+    cooldown: 15.0
+  abyssal_drown_strike:
+    cooldown: 15.0
+
+  # ValoBox Weapon & Meteor Abilities
+  web_shoot:
+    cooldown: 15.0
+    range: 20
+    decay-ticks: 100
+    radius: 2.0
+    slow-duration: 100
+    slow-amplifier: 2
+  spider_swarm:
+    cooldown: 15.0
+    count: 4
+    spider-name: "§cSwarm Spider"
+    duration-ticks: 200
+  arachnid_jump:
+    cooldown: 8.0
+    velocity-multiplier: 1.5
+    velocity-y: 0.6
+  shoot_wither_skull:
+    cooldown: 15.0
+    count: 1
+    velocity: 1.25
+    spread: 0.01
+    yield: 2.0
+    incendiary: false
+    wither-duration: 80
+    wither-amplifier: 1
+    charged: false
+    radius: 4.0
+    cloud-duration: 120
+  shoot_skeleton_skull:
+    cooldown: 15.0
+    count: 1
+    velocity: 1.25
+    spread: 0.01
+    yield: 2.0
+    incendiary: false
+    damage: 4.0
+  meteor_strike:
+    cooldown: 15.0
+    range: 15
+    sky-offset: 10.0
+    yield: 2.0
+  huge_meteorstrike:
+    cooldown: 15.0
+    damage: 30.0
+    range: 25
+    offset-xz: 60.0
+    sky-offset: 40.0
+    speed: 1.5
+    yield: 8.0
+    radius: 10.0
+    fire-ticks: 200
+    push-multiplier: 3.0
+    push-y: 1.0
+    max-duration-ticks: 100
+  massive_meteorstrike:
+    cooldown: 15.0
+    damage: 100.0
+    range: 35
+    offset-xz: 140.0
+    sky-offset: 100.0
+    speed: 2.0
+    yield: 20.0
+    radius: 25.0
+    fire-ticks: 400
+    push-multiplier: 5.0
+    push-y: 2.0
+    max-duration-ticks: 200
+  galaxy_meteorstrike:
+    cooldown: 15.0
+    damage: 250.0
+    range: 45
+    meteor-count: 5
+    impact-offset-xz: 20.0
+    offset-xz: 150.0
+    sky-offset: 120.0
+    max-duration-ticks: 150
+    wither-duration: 300
+    wither-amplifier: 2
+    delay-multiplier: 15
+
+  # JJK Custom Abilities (50)
+  divergent_fist:
+    cooldown: 15.0
+    damage_initial: 4.0
+    damage_delayed: 8.0
+  black_flash:
+    cooldown: 15.0
+    damage: 16.0
+  cleave:
+    cooldown: 15.0
+    max_health_percent: 0.20
+  dismantle:
+    cooldown: 15.0
+    damage: 6.0
+    range: 15.0
+  fuga_fire_arrow:
+    cooldown: 15.0
+    speed: 1.5
+    yield: 4.0
+  malevolent_shrine:
+    cooldown: 15.0
+    radius: 12.0
+    damage: 2.0
+    duration_ticks: 120
+  infinity:
+    cooldown: 15.0
+    duration: 8.0
+    radius: 3.0
+  lapse_blue:
+    cooldown: 15.0
+    radius: 6.0
+    pull_force: 0.6
+    damage: 4.0
+  reversal_red:
+    cooldown: 15.0
+    range: 8.0
+    damage: 8.0
+    push_multiplier: 1.8
+  hollow_purple:
+    cooldown: 15.0
+    damage: 25.0
+    max_steps: 25
+  unlimited_void:
+    cooldown: 15.0
+    radius: 10.0
+    duration: 6.0
+  divine_dog:
+    cooldown: 15.0
+  nue_lightning:
+    cooldown: 15.0
+  toad_tongue:
+    cooldown: 15.0
+  max_elephant:
+    cooldown: 15.0
+    damage: 5.0
+  rabbit_escape:
+    cooldown: 15.0
+  mahoraga_summon:
+    cooldown: 15.0
+  chimera_shadow_garden:
+    cooldown: 15.0
+    radius: 8.0
+    duration_ticks: 120
+  resonance:
+    cooldown: 15.0
+    damage: 8.0
+  hairpin:
+    cooldown: 15.0
+    damage: 6.0
+  ratio_strike:
+    cooldown: 15.0
+    damage: 6.0
+  collapse_strike:
+    cooldown: 15.0
+    damage: 5.0
+  boogie_woogie:
+    cooldown: 15.0
+  ember_insect:
+    cooldown: 15.0
+  maximum_meteor:
+    cooldown: 15.0
+  flower_field:
+    cooldown: 15.0
+  wooden_roots:
+    cooldown: 15.0
+  cursed_bud:
+    cooldown: 15.0
+  water_torrent:
+    cooldown: 15.0
+  blood_pierce:
+    cooldown: 15.0
+    damage: 8.0
+  supernova:
+    cooldown: 15.0
+    damage: 7.0
+  slicing_exorcism:
+    cooldown: 15.0
+  idle_transfiguration:
+    cooldown: 15.0
+  soul_multiplicity:
+    cooldown: 15.0
+  body_repel:
+    cooldown: 15.0
+  self_embodiment:
+    cooldown: 15.0
+  speech_stop:
+    cooldown: 15.0
+  speech_explode:
+    cooldown: 15.0
+  speech_blast_away:
+    cooldown: 15.0
+  playful_cloud:
+    cooldown: 15.0
+  pure_love_beam:
+    cooldown: 15.0
+  copy_technique:
+    cooldown: 15.0
+  authentic_mutual_love:
+    cooldown: 15.0
+  maximum_uzumaki:
+    cooldown: 15.0
+  instant_spirit_body:
+    cooldown: 15.0
+  projection_24fps:
+    cooldown: 15.0
+  comedian_show:
+    cooldown: 15.0
+  wind_scythe:
+    cooldown: 15.0
+  bird_strike:
+    cooldown: 15.0
+  idle_death_gamble:
+    cooldown: 15.0
+

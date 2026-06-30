@@ -1,0 +1,126 @@
+name: SimplePlots
+version: 1.0.0
+main: com.simpleplots.SimplePlots
+api-version: 1.20
+description: A complete PlotSquared v7 replica plugin.
+author: K1NGMR
+softdepend: [WorldEdit, PlaceholderAPI]
+commands:
+  plot:
+    description: Main command for SimplePlots.
+    aliases: [plots, p, plotsquared, p2, ps, "2", plotme]
+    permission: plots.use
+
+permissions:
+  plots.use:
+    description: Allows players to use the basic plot command.
+    default: true
+  plots.claim:
+    description: Allows claiming plots.
+    default: true
+  plots.auto:
+    description: Allows auto-claiming plots.
+    default: true
+  plots.info:
+    description: Allows viewing plot info.
+    default: true
+  plots.add:
+    description: Allows adding members.
+    default: true
+  plots.remove:
+    description: Allows removing members.
+    default: true
+  plots.trust:
+    description: Allows trusting members.
+    default: true
+  plots.untrust:
+    description: Allows untrusting members.
+    default: true
+  plots.deny:
+    description: Allows denying players.
+    default: true
+  plots.undeny:
+    description: Allows undenying players.
+    default: true
+  plots.flag.set:
+    description: Allows setting flags.
+    default: true
+  plots.flag.remove:
+    description: Allows removing flags.
+    default: true
+  plots.biome:
+    description: Allows setting biomes.
+    default: true
+  plots.merge:
+    description: Allows merging plots.
+    default: true
+  plots.unlink:
+    description: Allows unlinking plots.
+    default: true
+  plots.clear:
+    description: Allows clearing plots.
+    default: true
+  plots.delete:
+    description: Allows deleting plots.
+    default: true
+  plots.chat:
+    description: Allows toggling plot chat.
+    default: true
+  plots.backup.save:
+    description: Allows saving backups.
+    default: true
+  plots.backup.list:
+    description: Allows listing backups.
+    default: true
+  plots.backup.load:
+    description: Allows loading backups.
+    default: true
+  plots.download:
+    description: Allows downloading plot schematics.
+    default: true
+  plots.transfer:
+    description: Allows transferring plots to another player.
+    default: true
+  plots.visit:
+    description: Allows visiting other players' plots.
+    default: true
+  plots.home:
+    description: Allows teleporting to player's home plots.
+    default: true
+  plots.sethome:
+    description: Allows setting a custom home teleport point.
+    default: true
+  plots.near:
+    description: Allows viewing nearby plots.
+    default: true
+  plots.stats:
+    description: Allows viewing plot statistics.
+    default: true
+  plots.rate:
+    description: Allows rating plots.
+    default: true
+  plots.comments:
+    description: Allows managing and writing comments on plots.
+    default: true
+  plots.copy:
+    description: Allows copying plot layouts.
+    default: true
+  plots.paste:
+    description: Allows pasting plot layouts.
+    default: true
+  plots.middle:
+    description: Allows teleporting to the center of a plot cluster.
+    default: true
+  plots.block:
+    description: Allows blocking a player from entering your plot.
+    default: true
+  plots.unblock:
+    description: Allows unblocking a player.
+    default: true
+  plots.joinsupportdc:
+    description: Allows accessing the support Discord link.
+    default: true
+  plots.admin:
+    description: Allows admin operations.
+    default: op
+
