@@ -70,7 +70,7 @@ Here is a breakdown of the five plugins in this repository, showing what each do
 *   **Dual Economy Support:** Integrates with Vault economy providers, or falls back to a built-in player database (`players.yml`) storing balances if no economy plugin is present.
 *   **PAPI & Audit Logs:** PlaceholderAPI integration to display active policies, and a `claims.log` file to trace all purchases and claims.
 
-### 5. 🌌 Equinox
+### 5. 🌌 Equinox (Currently in the works)
 *High-performance, packet-level server security and administration suite.*
 *   **Advanced Anti-Freecam:** Includes packet-level checks to prevent players from using client-side freecam to bypass blocks.
 *   **Cave Reachability & Line of Sight:** Monitors player block interactions (mining, opening chests, clicking blocks) utilizing 3D raycasting and path reachability tests. Instantly blocks interactions made through solid walls.
