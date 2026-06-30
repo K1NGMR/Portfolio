@@ -6,7 +6,6 @@ During my time as a server owner, I designed and coded custom systems to create 
 
 Below is an overview of my core skills, experience, and the 5 major plugins featured in this repository.
 
----
 
 ## 🛠️ Skills & Expertise
 
@@ -24,7 +23,6 @@ Below is an overview of my core skills, experience, and the 5 major plugins feat
     *   3+ years of Minecraft server map construction and structural building
     *   Integrating custom gameplay mechanics (custom mobs, combat systems, region-locked mechanics)
 
----
 
 ## 💼 Experience
 
@@ -34,7 +32,6 @@ Below is an overview of my core skills, experience, and the 5 major plugins feat
 *   Created server spawns, builds, and custom region maps to enhance immersion.
 *   Developed high-performance administration and optimization systems to ensure a lag-free experience for players.
 
----
 
 ## 📂 Featured Projects (The 5 Plugins)
 
