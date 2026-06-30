@@ -33,7 +33,7 @@ Below is an overview of my core skills, experience, and the 5 major plugins feat
 *   Developed high-performance administration and optimization systems to ensure a lag-free experience for players.
 
 
-## 📂 Featured Projects (The 5 Plugins)
+## 📂 Featured Projects
 
 Here is a breakdown of the five plugins in this repository, showing what each does and how they are structured:
 
